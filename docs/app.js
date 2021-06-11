@@ -8,8 +8,6 @@ class App extends React.Component {
   };
 
   handleProphecy = () => {
-    // debugger
-
     const { prophecies } = this.state;
 
     const min = 0;
@@ -32,9 +30,11 @@ class App extends React.Component {
   };
 
   handleAddNewProphecy = () => {
-    // debugger
+    debugger;
 
     const { prophecies, newProphecy } = this.state;
+
+    if (newProphecy === '') return alert('Wpisz coś :)');
 
     const newPropheciesArray = prophecies.concat(newProphecy);
 
